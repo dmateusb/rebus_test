@@ -2,6 +2,8 @@
 
 Para los modelos Player y Team usé vistas ModelViewSet, mientras que para CouchingStaffView usé APIView en la cual implementé manualmente los metodos GET, POST, PATCH y DELETE.
 
+Para la gestion de los archivos usé la API de Google Storage.
+
 Los endpoints y sus respectivos bodies que conforman el CRUD son los suguientes:
 
 GET, POST:
