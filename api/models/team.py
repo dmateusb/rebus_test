@@ -6,7 +6,9 @@ class TeamManager(models.Manager):
         biggest_team = None
         max_players_in_team = 0
         for team in Team.objects.all(): 
-            if team.players_count() > max_players_in_team:
+            team_size= team.players_count()
+            if team_size > max_players_in_team:
+                max_players_in_team = team_size
                 biggest_team = team
         return biggest_team
 
@@ -24,8 +26,8 @@ class TeamManager(models.Manager):
 
 class Team(models.Model):
     name = models.TextField(null=False, max_length=45)
-    # flag = models.BinaryField()
-    # shield = models.BinaryField()
+    flag = models.ImageField(upload_to='team-flags', null= True)
+    shield = models.ImageField(upload_to='team-shields', null= True)
     objects = TeamManager()
 
     def __str__(self):

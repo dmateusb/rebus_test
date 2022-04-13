@@ -9,6 +9,10 @@ def validate_shirt_number(number):
     if number < 1 or number > 99:
         raise ValidationError("The shirt number must be between 1 and 99.")
 
+def validate_birthday(birthday):
+    if birthday > date.today():
+        raise ValidationError("The birthday can't be future")
+
 class PlayerManager(models.Manager):
     
     def youngest_player(self, reverse=False):
@@ -30,14 +34,14 @@ class PlayerManager(models.Manager):
 class Player(models.Model):
     name = models.TextField(null=False, max_length=45)
     last_name = models.TextField(null=False, max_length=45)
-    birthday = models.DateField(null=False)
+    birthday = models.DateField(null=False, validators=[validate_birthday])
     position = models.TextField(null=False, max_length=45)
     shirt_number = models.IntegerField(
         null=False, validators=[validate_shirt_number])
     is_titular = models.BooleanField(null=False)
     team = models.ForeignKey(to=Team, on_delete=models.CASCADE)
     objects = PlayerManager()
-# photo
+    photo = models.ImageField(upload_to='player-photos', null= True)
 
     def __str__(self):
         return "{} {}".format(self.name, self.last_name)
