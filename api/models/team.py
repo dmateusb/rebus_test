@@ -27,7 +27,7 @@ class TeamManager(models.Manager):
 class Team(models.Model):
     name = models.TextField(null=False, max_length=45)
     flag = models.ImageField(upload_to='team-flags', null= True)
-    shield = models.ImageField(upload_to='team-shields', null= True)
+    shell = models.ImageField(upload_to='team-shell', null= True)
     objects = TeamManager()
 
     def __str__(self):

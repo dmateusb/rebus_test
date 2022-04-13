@@ -62,7 +62,7 @@ class TeamSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Team
-        fields = ["id", "name", "flag", "shield"]
+        fields = ["id", "name", "flag", "shell"]
 
 
 class CouchingStaffSerializer(serializers.ModelSerializer):
