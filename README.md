@@ -1,5 +1,18 @@
 # Rebus Test
 
+Para instalar dependencias
+
+      pip install -r requirements.txt
+      
+Para correr migraciones
+     
+     python manage.py makemigrations && pyhton manage.py migrate
+     
+Para correr el servidor
+
+      python manage.py runserver
+      
+
 Para los modelos Player y Team usé vistas ModelViewSet, mientras que para CouchingStaffView usé APIView en la cual implementé manualmente los metodos GET, POST, PATCH y DELETE.
 
 Para la gestion de los archivos usé la API de Google Storage.
