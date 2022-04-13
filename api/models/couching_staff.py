@@ -1,12 +1,17 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 from api.models.team import Team
+from datetime import date
 
 
 def validate_rol(rol):
     roles = ["tecnico", "asistente", "medico", "preparador"]
     if not rol in roles:
         raise ValidationError("The rol must be: {}.".format(", ".join(roles)))
+
+def validate_birthday(birthday):
+    if birthday > date.today():
+        raise ValidationError("The birthday can't be future")
 
 class CouchingStaffManager(models.Manager):
     
@@ -24,7 +29,7 @@ class CouchingStaff(models.Model):
     
     name = models.TextField(null=False, max_length=45)
     last_name = models.TextField(null=False, max_length=45)
-    birthday = models.DateField(null=False)
+    birthday = models.DateField(null=False, validators=[validate_birthday])
     birth_country = models.TextField(null=False, max_length=45)
     rol = models.TextField(null=False, validators=[validate_rol])
     team = models.ForeignKey(Team, on_delete=models.CASCADE)

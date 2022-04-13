@@ -16,11 +16,11 @@ class ServicesViewSet(viewsets.ViewSet):
     @action(detail=False, methods=['get'])
     def count_players(self, request):
         result = Player.objects.count()
-        return Response({ "result": result}, status=status.HTTP_200_O)
+        return Response({ "result": result}, status=status.HTTP_200_OK)
 
     @action(detail=False, methods=['get'])
     def youngest_player(self, request):
-        result = Player.objects.youngest_player()
+        result = Player.objects.youngest_player(True)
         if not result:
             return Response({"result": "Empty table"}, status=status.HTTP_400_BAD_REQUEST)
         else:
@@ -29,7 +29,7 @@ class ServicesViewSet(viewsets.ViewSet):
 
     @action(detail=False, methods=['get'])
     def oldest_player(self, request):
-        result = Player.objects.youngest_player(True)
+        result = Player.objects.youngest_player()
         if not result:
             return Response({"result": "Empty table"}, status=status.HTTP_400_BAD_REQUEST)
         else:

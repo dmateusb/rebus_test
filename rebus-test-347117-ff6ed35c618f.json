@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rebus-test-347117",
+  "private_key_id": "ff6ed35c618f61b209e728b39fee547ef6db9a24",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC03yB35Scfo/mI\nw2KLbulARd6E6YiJz930jwpBfe0/OJc/FtCxqgmzLSgu2m1N1lv8O29RYSa9oMwh\nafzwh06plnTP46HPb7kfDTqOfu5YUpyH+XPJkbEV/pYyAooMzXSDbSljWmLB3rZD\nQ1iB3+PaXjaKtvvdEHvwJlMq3olcj+LwwWkGf2wdVOqtwXVT0kytpKPlg/i6O3zz\njPvuOZOqXFFZJKZHGe6HhFvcweDiaHOGNG8UU14muoLzFM9qX0V7ZzcbI4p8K3/y\n1BmeBkd8KZAP9Vq8/a+kD9ftZT8/N47bfs2tddGgOy6JBO2ZKcavtp0oHr183rdG\nFxkeKZYlAgMBAAECggEAHUWxPQY2pz3EAFjSxYstL8w+/5bGFLuyCcbum3vUXjN7\n8udv3hkNWdS4mKCcKQlEuNUrpmmJOg5gixXarFjRp8ukWxLVmLtVpAthizdKvrub\n/rul/Bzaopsh1rUnf3vu2+haVuyFaCfxqoAnPlmsSCaQQDHuIDBvRoYFVr5OT87p\nmdhQGFxJQhBpaToI4PIkNQC0kLMpbKq9axi+WRKmPTCkrCaNTz0I8gK6gfIkBhnq\nihWaUnUfH7dhF5/SeSJ2AZPZSlLwpcDgf2QF+CgfXq6nCDcgScOBBE+Samh0SIUX\n2A51RlpdFyuFSi71x9DAWPQr2NciWr2TQvE7Q5ig3wKBgQDvSUBDvintsptGfe09\nuumogFpgVzRW+CwhsnQ+NaSPmvCbQBkzHNpCB0y/2I6ePa1yLfuAbVufb1o7yPNu\n1vnjUoNSnXYJwib57YOx8ETN1A4NPHwvExeoNILro2cTU4Ub0ssnSYtzHlTmH5cr\nGBuWMqSAl4Ib4z3PO/doKVCTowKBgQDBgVjpgVWWZlchWoDDkDHzfzK92A22ixwu\nyZIQEN9Gdm/IFZBO59FX1IVEXJ6SAmRp14+uBreZ6aChKwyzyUHmYGgmVIUixaN9\ne2+UiApzQNQQGR1FqTQgeCo5j7aXWe4IX219ghtCH1xuJM287yCmTd8/3Rye2gNu\nGnO6cjOLlwKBgDjWbnRo5C644RcybDrgfgXvTwhZTm5mDp2GdQQd29PcmtBVvmac\nsN9EOp/LQb0mq19Wusm7sCrD2WwgBGrMl5i+jcD+8/3HZ1iwaTrH9p/pgdj1CA5q\ne5ERwBNWwfIeQZzlSiov1vbmOoZa9J5g4JShvN9qnZYgORtThCXywlf/AoGAQWN2\nKiHcTCB1HP46ONuHJaM8AE78A01qzpyq0OcCrArlpxUyWJeZdDaKehlaNDi+uc1v\n7fyzGj2KXCvx9Obzb+fwCdPR0Xg70PFfOS/naB7mCjKSY7HTvY0dp6nap7Zp60Zj\n91952pRCZa3mIAwmWkxCPpB3VW6SbiheJwjkRi0CgYA6KCSWGat943l4x/x/cOmv\njCAdnzBAKXUhnJVdFv4jRTPtogkk9Snk1ML59StKUcUgpTdJyPqL+FRiGemrsmWR\n3S589RKsKAL4XToY9PTbHoHRa1EVsotVoSQKYxsYyJnpVqfqdYMn9vJv+DNnA8Ob\ngpPOit5mCfZECvJi6HbP2Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "django-upload-admin@rebus-test-347117.iam.gserviceaccount.com",
+  "client_id": "111398312999066141525",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/django-upload-admin%40rebus-test-347117.iam.gserviceaccount.com"
+}
